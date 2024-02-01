@@ -25,7 +25,10 @@ Gra kończy się gdy:
 
 Dodatkowym parametrem jest slippery (boolean). 
 Parametr ten sprawia, że agent ślizga się po wykonaniu ruchu, co utrudnia wytrenowanie.
-  
+
+Program ze względu na wydajność zostałpodzielony na dwa etapy:
+    1. Trening - bez renderowania
+    2. Wykonanie sekwencji wyuczonych ruchów
 '''
 
 def run(episodes, is_training=True, render=False):
