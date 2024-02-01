@@ -3,6 +3,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 
+'''
+Autorzy:
+Stankiewicz Kacper s22619
+Rutkowski Marcin s12497
+
+Przygotowanie środowiska:
+
+pip install gymnasium
+pip install gymnasium[toy-text]
+pip install numpy
+pip install matplotlib
+'''
+
 def run(episodes, is_training=True, render=False):
 
     env = gym.make('FrozenLake-v1', map_name="8x8", is_slippery=True, render_mode='human' if render else None)
@@ -65,4 +78,4 @@ def run(episodes, is_training=True, render=False):
 
 if __name__ == '__main__':
     # run(15000)
-    run(1000, is_training=False, render=False)
+    run(1000, is_training=False, render=True)
