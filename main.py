@@ -14,6 +14,18 @@ pip install gymnasium
 pip install gymnasium[toy-text]
 pip install numpy
 pip install matplotlib
+
+Opis:
+Gra Frozen Lake - agent wykonuje ruchy dół, góra, lewo, prawo.
+Celem aagenta jest dojść do prezentu omijając po drodze przeszkody (cienki lód).
+Gra kończy się gdy:
+    1. Agent dojdzie do celu
+    2. Agent wpadnie do wody (napotka przeszkodę)
+    3. Agent nie wpadnie w scenariusze ad 1 i ad 2 w 200 ruchach
+
+Dodatkowym parametrem jest slippery (boolean). 
+Parametr ten sprawia, że agent ślizga się po wykonaniu ruchu, co utrudnia wytrenowanie.
+  
 '''
 
 def run(episodes, is_training=True, render=False):
